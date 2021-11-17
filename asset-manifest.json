@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Spotify-Auth-Example/static/css/main.b89a5805.chunk.css",
-    "main.js": "/Spotify-Auth-Example/static/js/main.65ed7a65.chunk.js",
-    "main.js.map": "/Spotify-Auth-Example/static/js/main.65ed7a65.chunk.js.map",
+    "main.js": "/Spotify-Auth-Example/static/js/main.3a33b19a.chunk.js",
+    "main.js.map": "/Spotify-Auth-Example/static/js/main.3a33b19a.chunk.js.map",
     "runtime-main.js": "/Spotify-Auth-Example/static/js/runtime-main.e7598ec2.js",
     "runtime-main.js.map": "/Spotify-Auth-Example/static/js/runtime-main.e7598ec2.js.map",
-    "static/js/2.babd25cc.chunk.js": "/Spotify-Auth-Example/static/js/2.babd25cc.chunk.js",
-    "static/js/2.babd25cc.chunk.js.map": "/Spotify-Auth-Example/static/js/2.babd25cc.chunk.js.map",
+    "static/js/2.48059f4f.chunk.js": "/Spotify-Auth-Example/static/js/2.48059f4f.chunk.js",
+    "static/js/2.48059f4f.chunk.js.map": "/Spotify-Auth-Example/static/js/2.48059f4f.chunk.js.map",
     "index.html": "/Spotify-Auth-Example/index.html",
     "static/css/main.b89a5805.chunk.css.map": "/Spotify-Auth-Example/static/css/main.b89a5805.chunk.css.map",
-    "static/js/2.babd25cc.chunk.js.LICENSE.txt": "/Spotify-Auth-Example/static/js/2.babd25cc.chunk.js.LICENSE.txt",
+    "static/js/2.48059f4f.chunk.js.LICENSE.txt": "/Spotify-Auth-Example/static/js/2.48059f4f.chunk.js.LICENSE.txt",
     "static/media/spotifyLogo.0c4ae91b.png": "/Spotify-Auth-Example/static/media/spotifyLogo.0c4ae91b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e7598ec2.js",
-    "static/js/2.babd25cc.chunk.js",
+    "static/js/2.48059f4f.chunk.js",
     "static/css/main.b89a5805.chunk.css",
-    "static/js/main.65ed7a65.chunk.js"
+    "static/js/main.3a33b19a.chunk.js"
   ]
 }
