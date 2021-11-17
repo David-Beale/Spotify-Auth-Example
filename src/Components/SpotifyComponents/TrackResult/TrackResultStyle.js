@@ -47,6 +47,9 @@ export const Artist = styled.div`
   font-size: 0.8rem;
   color: ${colors.secondary};
   margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 export const Duration = styled.div`
   font-size: 1rem;
