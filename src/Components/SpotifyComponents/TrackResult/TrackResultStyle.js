@@ -5,7 +5,8 @@ export const TrackResultContainer = styled.div`
   box-sizing: border-box;
   min-height: 65px;
   width: 100%;
-  background-color: rgba(60, 70, 60, 1);
+  background-color: ${({ isPlaying }) =>
+    isPlaying ? "rgb(40, 50, 40)" : "rgba(60, 70, 60, 1)"};
   margin-bottom: 2px;
   border-radius: 15px;
   display: flex;
@@ -36,7 +37,8 @@ export const TextContainer = styled.div`
 `;
 export const TrackTitle = styled.div`
   font-size: 1.1rem;
-  color: ${colors.primary};
+  color: ${({ isPlaying }) =>
+    isPlaying ? colors.spotifyGreen : colors.primary};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

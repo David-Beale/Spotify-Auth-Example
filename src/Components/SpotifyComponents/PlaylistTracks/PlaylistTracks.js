@@ -29,12 +29,14 @@ const Row = React.memo(function Row(props) {
       track={item}
       top={style.top}
       selectSong={setPlaylistSong}
+      isPlaying={item.id === data.currentSong}
     />
   );
 }, areEqual);
 
 export default function PlaylistTracks() {
   const playlistTracks = useStore((state) => state.playlistTracks);
+  const currentSong = useStore((state) => state.currentSong);
 
   const hasNextPage = useStore((state) => !state.playlistRequestsFinised);
   const loadMoreItems = useStore((state) => state.playlistRequestsLoadNextPage);
@@ -68,6 +70,7 @@ export default function PlaylistTracks() {
           innerElementType={InnerElement}
           itemData={{
             items: playlistTracks,
+            currentSong,
           }}
         >
           {Row}

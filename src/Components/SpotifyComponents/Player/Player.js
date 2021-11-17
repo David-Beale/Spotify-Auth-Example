@@ -6,12 +6,17 @@ import { PlayerContainer, styles } from "./PlayerStyles";
 
 export default function Player() {
   const songs = useStore((state) => state.songs);
+  const setCurrentSong = useStore((state) => state.setCurrentSong);
   const [open, setOpen] = useState(false);
   const [play, setPlay] = useState(false);
 
-  const playerCB = useCallback((state) => {
-    if (!state.isPlaying) setPlay(false);
-  }, []);
+  const playerCB = useCallback(
+    (state) => {
+      if (!state.isPlaying) setPlay(false);
+      setCurrentSong(state.track.id);
+    },
+    [setCurrentSong]
+  );
 
   useEffect(() => {
     if (!songs.length) return;
