@@ -119,7 +119,7 @@ spotifyApi.loginRedirect = async () => {
   const parameters = {
     response_type: "code",
     client_id: process.env.REACT_APP_SPOTIFY_CLIENT_ID,
-    redirect_uri: "http://localhost:3000/",
+    redirect_uri: process.env.REACT_APP_REDIRECT_URL,
     scope: scopes.join(" "),
     state: stateLocal,
     code_challenge: codeChallenge,
@@ -144,7 +144,7 @@ spotifyApi.requestTokens = (payload) => {
   params.append("client_id", process.env.REACT_APP_SPOTIFY_CLIENT_ID);
   params.append("grant_type", "authorization_code");
   params.append("code", code);
-  params.append("redirect_uri", "http://localhost:3000/");
+  params.append("redirect_uri", process.env.REACT_APP_REDIRECT_URL);
   params.append("code_verifier", codeVerifierLocal);
 
   return axios
